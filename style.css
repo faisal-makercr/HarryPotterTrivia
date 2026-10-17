@@ -1,0 +1,6 @@
+.characters-sec.hidden{
+    display: none;
+}
+.characters-sec {
+    display: flex;
+}

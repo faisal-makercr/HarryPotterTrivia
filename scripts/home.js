@@ -1,11 +1,10 @@
-let usersection=document.querySelector(".users-section");
-let isShow = true;
+const charactersSection=document.querySelector(".characters-sec");
 function showHideCharacters() {
-    if (isShow) {
-        usersection.style.display="none";
-        isShow = false;
-    } else {
-        usersection.style.display ="block";
-        isShow=true;
+    if (charactersSection.style.display=== "none"|| charactersSection.computedStyleMap.display===""){
+        charactersSection.style.display="block";
+        }
+        else{
+        charactersSection.classList.toggle("hidden");
+        }
     }
-}
+    
