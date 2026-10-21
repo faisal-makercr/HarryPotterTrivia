@@ -4,7 +4,7 @@
     width: 100%;
     font-size: 1.8rem;
     border: 0.1rem solid rgb(134, 39, 39);
-    background-color: #3c231bbc;
+    background-color: #3c231be1;
 }
 .choice-container:hover{
     cursor:pointer;
@@ -19,5 +19,8 @@
     color:white;
 }
 .choice-text{
-    padding: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    font-size: 2.5rem;
+    color: #ffffff;
 }
