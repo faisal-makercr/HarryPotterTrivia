@@ -5,8 +5,6 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-
-
 .homepg{
     display: flex;
     flex-direction: column;
@@ -19,9 +17,9 @@ body{
     display: flex;
     justify-content: center;
     align-items:center;
-    max-width: 80rem;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 1.5rem;
 }
 #head1 {
@@ -51,6 +49,10 @@ body{
 }
 .characters-sec {
     display: flex;
+    justify-content: center;
+    
+    gap: 1rem;
+    width: 100%;
 }
 
 .characterpg {
@@ -61,15 +63,15 @@ body{
     text-align: center;
     font-size: 1.5rem;
 }
-
-
 #characterName{
     font-size: 4rem;
     background-color: #714e33cc;
 }
 #characterImage{
-    height: 60rem;
-    width: 40rem;
+    width: min(90%, 400px);
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
 }
 #chardescp{
     font-size: 2.5rem;
