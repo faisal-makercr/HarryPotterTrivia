@@ -28,5 +28,9 @@ Result Page
  * CSS
  * JAVASCRIPT
 
+## Some features:-
+This website has progress bar and live score show in the trivia page.
+You can save your high score with the name you like and look high scores in the highscore page.
+
 ## My experience and learnings
 This project was challenging for me like how do I give progress bar? how to give score bar? and so many things, its not perfect and I still want to do a lot of things to this website which I will do.
