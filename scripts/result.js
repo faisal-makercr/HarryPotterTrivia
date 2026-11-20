@@ -9,6 +9,7 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 const MAX_HIGH_SCORES = 5;
 finalScore.innerText = mostRecentScore;
 
+document.getElementById('goToCharBtn').href= `characters.html?id=${id}`;
 username.addEventListener("keyup", () => {
     saveScoreBtn.disabled =!username.value;
 });
@@ -18,7 +19,7 @@ saveHighScore = e => {
     e.preventDefault();
 
     const score ={
-        score: Math.floor(mostRecentScore * 100),
+        score: Math.floor(Number(mostRecentScore) * 100),
         name: username.value
     };
     highScores.push(score);
