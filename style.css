@@ -36,10 +36,14 @@ body{
     margin-left: 0.25rem;
     margin-right: 0.25rem;
 }
+#char1 #char2 #char3:hover {
+    cursor:pointer;
+}
 .clickhs{
     font-size: 2.5rem;
     background-color: #1c1b2692;
     color: #d7bb82;
+    cursor: pointer;
 }
 
 .characters-sec.hidden{
@@ -76,10 +80,18 @@ body{
     font-size: 2.5rem;
     background-color: #1c1b2692;
     color: #d7bb82;
+    padding: 1rem;
+    cursor: pointer;
+    border-width: 0 0.2rem 0.2rem 0;
 }
-
-
-
-
-
-
+#hsBtn{
+    font-size: 2.5rem;
+    background-color: #1c1b2692;
+    color: #d7bb82;
+    width: fit-content;
+    padding: 0 2rem;
+    margin: 2rem auto 0 auto;
+    display: inline-block;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

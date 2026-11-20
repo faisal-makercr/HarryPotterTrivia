@@ -1,3 +1,5 @@
+const params = new URLSearchParams(window.location.search);
+const id= params.get('id');
 const username = document.getElementById("username");
 const saveScoreBtn= document.getElementById("saveScoreBtn");
 const finalScore= document.getElementById("finalScore");
@@ -16,7 +18,7 @@ saveHighScore = e => {
     e.preventDefault();
 
     const score ={
-        score: Math.floor(Math.random() * 100),
+        score: Math.floor(mostRecentScore * 100),
         name: username.value
     };
     highScores.push(score);
@@ -24,5 +26,5 @@ saveHighScore = e => {
     highScores.splice(5);
 
     localStorage.setItem("highScores", JSON.stringify(highScores));
-    window.location.assign("/characters.html");
+    window.location.assign(`/characters.html?id=${id}`);
 };
